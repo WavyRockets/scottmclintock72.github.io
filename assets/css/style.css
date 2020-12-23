@@ -1,0 +1,235 @@
+@font-face {
+  font-family: HeiseiKakuGoStd3;
+  src: url('../fonts/HeiseiKakuGoStd-W3.otf');
+}
+
+@font-face {
+  font-family: HeiseiKakuGoStd7;
+  src: url('../fonts/HeiseiKakuGoStd-W7.otf');
+}
+
+@font-face {
+  font-family: HeiseiKakuGoStd9;
+  src: url('../fonts/HeiseiKakuGoStd-W9.otf');
+}
+
+* { background:transparent }
+
+body {
+    background: url('../img/background.jpg') no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: #3B3E42;
+    margin-top: 100px;
+    position: relative;
+}
+
+h1 {
+    font-family: HeiseiKakuGoStd9;
+    color:#fff;
+    text-align: center;
+    font-size: 52px;
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 3px #202123;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-family: HeiseiKakuGoStd9;
+    color:#fff;
+    text-align: center;
+    font-size: 52px;
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 3px #202123;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li {
+    color: #fff;
+    font-family: HeiseiKakuGoStd9;
+    font-size: 21px;
+    padding-bottom: 10px;
+    text-shadow: 0 0 3px #202123;
+    letter-spacing: -1px;
+}
+
+ul li::before {
+  content: "★";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #FF1776; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-right: 1em; /* Also needed for space (tweak if needed) */
+}
+
+.animateText {
+    color: #FF1776;
+}
+
+.lightboxContainer {
+    margin-top: 30px;
+}
+
+.portfolioBottom {
+    z-index: 999;
+}
+
+.rocket {
+    position: absolute;
+    left: 5px;
+    top: 135px;
+    width: 372px;
+}
+
+.portfolioDescription {
+    color: #C4C4C4;
+    font-family: HeiseiKakuGoStd3;
+    font-size: 18px;
+    text-shadow: 0 0 3px #202123;
+    margin-top: 20px;
+}
+
+.portfolioDescription span {
+    color: #FF1776;
+}
+
+.pathright {
+    position: absolute;
+    right: 5px;
+    top: 380px;
+    width: 192px;
+}
+
+.footerpath {
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+    width: 392px;
+    z-index: 1;
+}
+
+.intro {
+    color: #fff;
+    font-family: HeiseiKakuGoStd3;
+    font-size: 20px;
+    text-shadow: 0 0 3px #202123;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center; 
+}
+
+.helloLink {
+    color: #fff;
+    padding: 20px 60px;
+    background: #FF1776;
+    transition: 0.3s;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    font-family: HeiseiKakuGoStd3;
+    font-size: 18px;
+    box-shadow: 0 0 3px #202123;
+}
+
+.helloLink:hover {
+    color: #fff;
+    background: #000;
+}
+
+.helloLink:focus, .helloLink:active, .helloLink:visited  {
+    color: #fff;
+    background: #000;
+}
+
+hr {
+    margin-top: 60px;
+}
+
+.copyright {
+    color: #C4C4C4; 
+    text-align: center;
+    font-size: 16px;
+    font-family: HeiseiKakuGoStd3;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.copyright::before {
+    content: url(../img/rocketcopy.png);
+    position: absolute;
+    bottom: 12px;
+    margin-left: -30px;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    h1 {
+        font-size: 33px;
+    }
+    
+    h3 {
+        font-size: 33px;
+    }
+    
+    body {
+      background: url('../img/background.jpg'); 
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #3B3E42;
+      height: 100%;
+    }
+    
+    .rocket {
+      width: 150px;
+      top: -80px;
+    }
+    
+    .pathright {
+        width: 100px;
+        top: 570px;
+    }
+    
+    .footerpath {
+        display: none;
+    }
+
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 73.9375em) {
+    h1 {
+        font-size: 43px;
+    }
+    
+    h3 {
+        font-size: 43px;
+    }
+    
+    .rocket {
+      width: 190px;
+      top: 120px;
+    }
+    
+    .pathright {
+        width: 100px;
+        top: 460px;
+    }
+    
+    .footerpath {
+        display: none;
+    }
+}
